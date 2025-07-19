@@ -1,0 +1,162 @@
+<style>
+  #booking {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fffdf9;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  #booking h2 {
+    font-size: 2.5em;
+    color: #1d1d1d;
+    margin-bottom: 25px;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff3c38, #ff005c);
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    transition: 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background: linear-gradient(45deg, #d60042, #c3002f);
+  }
+
+  .tier-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .tier {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 320px;
+    min-height: 420px;
+    text-align: left;
+    color: white;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .tier::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 0;
+  }
+
+  .tier * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .tier h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+
+  .tier span.price-tag {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffb3c6;
+    margin-bottom: 10px;
+  }
+
+  .tier ul {
+    padding-left: 18px;
+    color: #fff;
+  }
+
+  .tier ul li {
+    margin-bottom: 6px;
+  }
+
+  .tier1 {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAIAAADwf7zUAAEAAElEQVR4nFT9684s27IkCJmZR85dVQ1qblUNtIQQdEGL9384amW4GT/Mc+5C55wlnXWZ35eRI3y42835//w//UeCwBokGCRQADGAYs/ErzAejJ3PAMQmAiwxAbIRFSyhzUKjOIipAWIGiExyEkgJDBDk');
+  }
+
+  .tier2 {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAIAAADwf7zUAAEAAElEQVR4nEz92Y6ta3YdiI0x57fWitjNabJjL7JUpuUSRMliSSpQsgoG7Gewb33jS79GXZTfw3cGXBAKMMoNqpFJiiJFFsmkRCazY2YyycyTeZrdRMRa35zDF2P+kTpA5mn23hEr/v9r5hzd5M995SOC');
+  }
+
+  .tier3 {
+    background: #ffffff;
+    color: #333;
+  }
+
+  .tier3 * {
+    color: #333;
+  }
+
+  .tier3::before {
+    display: none;
+  }
+</style>
+
+<section id="booking">
+  <h2>Choose Your Backyard Hibachi Experience</h2>
+  <a href="https://app.squareup.com/appointments/book/fv98k1yb9gn3bb/LYH17QF7SK37W/start" class="cta-button">Book Now</a>
+
+  <div class="tier-wrapper">
+    <!-- Tier 1 -->
+    <div class="tier tier1">
+      <h3>1st Tier: Classic Flame</h3>
+      <span class="price-tag">$45 per person</span>
+      <ul>
+        <li><strong>Appetizer:</strong> Salad with ginger dressing, house-made soup</li>
+        <li><strong>Entrée:</strong></li>
+        <li>Fried rice with sweet peas and carrots</li>
+        <li>Vegetable mix with zucchini and onions</li>
+        <li>Choice of: Sirloin steak, chicken, or shrimp</li>
+      </ul>
+    </div>
+
+    <!-- Tier 2 -->
+    <div class="tier tier2">
+      <h3>2nd Tier: Fire & Flavor</h3>
+      <span class="price-tag">$65 per person</span>
+      <ul>
+        <li><strong>Appetizer:</strong> Salad with ginger dressing, house-made soup</li>
+        <li><strong>Entrée:</strong></li>
+        <li>Fried rice with sweet peas and carrots</li>
+        <li>Vegetable mix with zucchini and onions</li>
+        <li>Choice of: <strong>Filet mignon steak</strong>, chicken, or <strong>jumbo shrimp</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Tier 3 -->
+  <div class="tier-wrapper tier-tier3">
+    <div class="tier tier3">
+      <h3>3rd Tier: Chef’s Signature Feast</h3>
+      <span class="price-tag">$90 per person</span>
+      <ul>
+        <li><strong>Appetizer:</strong> Salad with ginger dressing, house-made soup</li>
+        <li><strong>Entrée:</strong></li>
+        <li>Fried rice with sweet peas and carrots</li>
+        <li>Vegetable medley with zucchini, onions, and broccoli</li>
+        <li><strong>Filet mignon steak</strong></li>
+        <li>Chicken</li>
+        <li><strong>Scallops</strong></li>
+        <li><strong>Lobster tail</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
